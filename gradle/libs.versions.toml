@@ -36,6 +36,14 @@ secretsPlugin = "2.0.1"
 kotlinxSerialization = "1.7.3"
 androidTools = "31.2.2"
 
+# Project versions
+projectApplicationId = "com.zeljkolucic.runique"
+projectVersionName = "1.0"
+projectMinSdkVersion = "25"
+projectTargetSdkVersion = "35"
+projectCompileSdkVersion = "35"
+projectVersionCode = "1"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -106,3 +114,4 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 room = { id = "androidx.room", version.ref = "room" }
 mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin"}
 
+runique-android-application = { id = "runique.android.application", version = "unspecified" }
