@@ -13,6 +13,7 @@ internal fun Project.configureKotlinAndroid(
     commonExtension.apply {
         compileSdk = libs.findVersion("projectCompileSdkVersion").get().toString().toInt()
 
+        buildFeatures.buildConfig = true
         defaultConfig.minSdk = libs.findVersion("projectMinSdkVersion").get().toString().toInt()
 
         compileOptions {
