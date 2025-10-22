@@ -8,6 +8,7 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.9.2"
 activityCompose = "1.10.1"
 composeBom = "2024.09.00"
+composeCompiler = "1.5.9"
 appcompat = "1.7.1"
 material = "1.10.0"
 jetbrainsKotlinJvm = "2.0.21"
@@ -115,3 +116,4 @@ room = { id = "androidx.room", version.ref = "room" }
 mapsplatform-secrets-plugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretsPlugin"}
 
 runique-android-application = { id = "runique.android.application", version = "unspecified" }
+runique-android-application-compose = { id = "runique.android.application.compose", version = "unspecified" }
