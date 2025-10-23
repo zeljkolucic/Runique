@@ -3,6 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.mapsplatform.secrets.plugin)
     alias(libs.plugins.ksp)
+    alias(libs.plugins.runique.jvm.ktor)
 }
 
 android {
