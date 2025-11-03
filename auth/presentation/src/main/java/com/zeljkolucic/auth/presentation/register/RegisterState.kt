@@ -9,6 +9,8 @@ data class RegisterState(
     val password: TextFieldState = TextFieldState(),
     val isPasswordVisible: Boolean = false,
     val passwordValidationState: PasswordValidationState = PasswordValidationState(),
-    val isRegistering: Boolean = false,
-    val canRegister: Boolean = passwordValidationState.isValidPassword && !isRegistering
-)
+    val isRegistering: Boolean = false
+) {
+    val canRegister: Boolean
+        get() = isEmailValid && passwordValidationState.isValidPassword && !isRegistering
+}

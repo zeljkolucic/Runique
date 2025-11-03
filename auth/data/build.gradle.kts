@@ -18,4 +18,6 @@ dependencies {
     implementation(projects.auth.domain)
     implementation(projects.core.domain)
     implementation(projects.core.data)
+    implementation(libs.koin.android)
+    implementation(libs.koin.core)
 }
