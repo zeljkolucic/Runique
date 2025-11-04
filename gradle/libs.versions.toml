@@ -15,6 +15,7 @@ jetbrainsKotlinJvm = "2.0.21"
 coil = "2.7.0"
 coroutines = "1.8.1"
 desugarJdkLibs = "2.1.4"
+securityCryptoKtx = "1.1.0-alpha06"
 koin = "4.0.1"
 ktor = "3.0.0"
 ktorClientLogging = "3.0.0"
@@ -97,6 +98,7 @@ org-mongodb-bson = { module = "org.mongodb:bson", version.ref = "bson" }
 play-services-maps = { group = "com.google.android.gms", name = "play-services-maps", version.ref = "playServicesMaps" }
 google-maps-android-utils-ktx = { module = "com.google.maps.android:maps-utils-ktx", version.ref = "mapsUtils"}
 annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+androidx-security-crypto-ktx = { module = "androidx.security:security-crypto-ktx", version.ref = "securityCryptoKtx" }
 
 # Gradle
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }

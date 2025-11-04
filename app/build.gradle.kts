@@ -75,6 +75,8 @@ dependencies {
     // MongoDB BSON
     implementation(libs.org.mongodb.bson)
 
+    implementation(libs.androidx.security.crypto.ktx)
+
     // Desugaring
     coreLibraryDesugaring(libs.desugar.jdk.libs)
 

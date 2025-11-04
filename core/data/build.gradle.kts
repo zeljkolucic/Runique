@@ -18,4 +18,9 @@ dependencies {
 
     implementation(projects.core.domain)
     implementation(projects.core.database)
+
+    implementation(libs.timber)
+
+    implementation(libs.koin.android)
+    implementation(libs.koin.core)
 }
