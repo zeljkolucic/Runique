@@ -15,3 +15,6 @@ val RuniqueWhite = Color(0xFFFAFAFA)
 val RuniqueDarkRed = Color(0xFFBB3D3D)
 val RuniqueDarkRed5 = Color(0x0DBB3D3D)
 
+
+
+
