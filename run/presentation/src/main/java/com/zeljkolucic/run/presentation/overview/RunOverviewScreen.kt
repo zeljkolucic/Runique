@@ -21,14 +21,22 @@ import com.zeljkolucic.core.presentation.designsystem.components.RuniqueFloating
 import com.zeljkolucic.core.presentation.designsystem.components.RuniqueScaffold
 import com.zeljkolucic.core.presentation.designsystem.components.RuniqueToolbar
 import com.zeljkolucic.core.presentation.designsystem.components.util.DropDownItem
+import com.zeljkolucic.core.presentation.ui.ObserveAsEvents
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
 fun RunOverviewScreen(
+    onStartClick: () -> Unit,
     viewModel: RunOverviewViewModel = koinViewModel()
 ) {
     RunOverviewScreenContent(
-        onAction = viewModel::onAction
+        onAction = { action ->
+            when(action) {
+                RunOverviewAction.OnStartClick -> onStartClick()
+                else -> Unit
+            }
+            viewModel.onAction(action)
+        }
     )
 }
 
