@@ -13,6 +13,7 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.timber)
+    implementation(libs.google.maps.android.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)

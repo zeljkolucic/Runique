@@ -81,7 +81,7 @@ class ActiveRunViewModel(
                 state = state.copy(shouldTrack = false)
             }
             ActiveRunAction.OnFinishRunClick -> {
-                
+
             }
             is ActiveRunAction.OnLocationPermissionInfoSubmit -> {
                 hasLocationPermission.value = action.acceptedLocationPermission

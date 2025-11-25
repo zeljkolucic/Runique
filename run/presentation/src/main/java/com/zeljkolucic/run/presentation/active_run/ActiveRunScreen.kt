@@ -31,6 +31,7 @@ import com.zeljkolucic.core.presentation.designsystem.components.RuniqueOutlined
 import com.zeljkolucic.core.presentation.designsystem.components.RuniqueScaffold
 import com.zeljkolucic.core.presentation.designsystem.components.RuniqueToolbar
 import com.zeljkolucic.run.presentation.active_run.components.RunDataCard
+import com.zeljkolucic.run.presentation.active_run.maps.TrackerMap
 import com.zeljkolucic.run.presentation.overview.RunOverviewScreen
 import com.zeljkolucic.run.presentation.permission.hasLocationPermission
 import com.zeljkolucic.run.presentation.permission.hasNotificationPermission
@@ -138,6 +139,14 @@ fun ActiveRunScreenContent(
                 .fillMaxSize()
                 .background(MaterialTheme.colorScheme.surface)
         ) {
+            TrackerMap(
+                isRunFinished = state.isRunFinished,
+                currentLocation = state.currentLocation,
+                locations = state.runData.locations,
+                onSnapshot = {},
+                modifier = Modifier
+                    .fillMaxSize()
+            )
             RunDataCard(
                 elapsedTime = state.elapsedTime,
                 runData = state.runData,
