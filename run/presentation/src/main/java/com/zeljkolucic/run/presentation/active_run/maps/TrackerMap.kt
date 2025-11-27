@@ -55,7 +55,7 @@ fun TrackerMap(
         label = ""
     )
     val markerPositionLongitude by animateFloatAsState(
-        targetValue = currentLocation?.latitude?.toFloat() ?: 0f,
+        targetValue = currentLocation?.longitude?.toFloat() ?: 0f,
         animationSpec = tween(durationMillis = 500),
         label = ""
     )
