@@ -10,4 +10,14 @@
     <string name="error_unknown">An unknown error occurred.</string>
     <string name="error_email_exists">A user with that email already exists.</string>
     <string name="error_email_password_incorrect">The email or password is incorrect.</string>
+    <string name="map">Run Map</string>
+    <string name="run_map">Run Map</string>
+    <string name="error_couldnt_load_image">Couldn\'t load image.</string>
+    <string name="total_running_time">Total running time</string>
+    <string name="distance">Distance</string>
+    <string name="pace">Pace</string>
+    <string name="avg_speed">Average speed</string>
+    <string name="max_speed">Max speed</string>
+    <string name="total_elevation">Total elevation</string>
+    <string name="delete">Delete</string>
 </resources>

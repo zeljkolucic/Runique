@@ -14,6 +14,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.timber)
     implementation(libs.google.maps.android.compose)
+    implementation(libs.coil.compose)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
