@@ -2,15 +2,18 @@ package com.zeljkolucic.runique
 
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.navigation
+import androidx.navigation.navDeepLink
 import com.zeljkolucic.auth.presentation.intro.IntroScreen
 import com.zeljkolucic.auth.presentation.login.LoginScreen
 import com.zeljkolucic.auth.presentation.register.RegisterScreen
 import com.zeljkolucic.run.presentation.active_run.ActiveRunScreen
+import com.zeljkolucic.run.presentation.active_run.service.ActiveRunService
 import com.zeljkolucic.run.presentation.overview.RunOverviewScreen
 
 @Composable
@@ -93,8 +96,31 @@ private fun NavGraphBuilder.runGraph(navController: NavHostController) {
                 }
             )
         }
-        composable("active_run") {
-            ActiveRunScreen()
+        composable(
+            route = "active_run",
+            deepLinks = listOf(
+                navDeepLink {
+                    uriPattern = "runique://active_run"
+                }
+            )
+        ) {
+            val context = LocalContext.current
+            ActiveRunScreen(
+                onServiceToggle = { shouldServiceRun ->
+                    if(shouldServiceRun) {
+                        context.startService(
+                        ActiveRunService.createStartIntent(
+                                context = context,
+                                activityClass = MainActivity::class.java
+                            )
+                        )
+                    } else {
+                        context.startService(
+                            ActiveRunService.createStopIntent(context)
+                        )
+                    }
+                }
+            )
         }
     }
 }
