@@ -112,6 +112,7 @@ ui = { group = "androidx.compose.ui", name = "ui", version.ref = "ui" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
+android-dynamic-feature = { id = "com.android.dynamic-feature", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
@@ -126,6 +127,7 @@ runique-android-application-compose = { id = "runique.android.application.compos
 runique-android-library = { id = "runique.android.library", version = "unspecified" }
 runique-android-library-compose = { id = "runique.android.library.compose", version = "unspecified" }
 runique-android-feature-ui = { id = "runique.android.feature.ui", version = "unspecified" }
+runique-android-dynamic-feature = { id = "runique.android.dynamic.feature", version = "unspecified" }
 runique-android-room = { id = "runique.android.room", version = "unspecified" }
 runique-jvm-library = { id = "runique.jvm.library", version = "unspecified" }
 runique-jvm-ktor = { id = "runique.jvm.ktor", version = "unspecified" }
