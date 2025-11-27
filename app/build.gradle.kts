@@ -12,7 +12,7 @@ android {
     defaultConfig {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    dynamicFeatures += setOf(":analytics:analytics-feature")
+    dynamicFeatures += setOf(":analytics:analytics_feature")
 }
 
 dependencies {
