@@ -16,4 +16,6 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation(projects.core.domain)
+    implementation(libs.org.mongodb.bson)
+    implementation(libs.bundles.koin)
 }
