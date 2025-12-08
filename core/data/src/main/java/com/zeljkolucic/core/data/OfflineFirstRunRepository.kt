@@ -163,7 +163,7 @@ class OfflineFirstRunRepository(
         val result = client.get<Unit>(
             route = "/logout"
         ).asEmptyResult()
-        
+
         client.authProvider<BearerAuthProvider>()?.clearToken()
 
         return result
