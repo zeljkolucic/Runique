@@ -67,6 +67,7 @@ dependencies {
     // Database
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
+    implementation(libs.feature.delivery.ktx)
     ksp(libs.room.compiler)
 
     // Coroutines

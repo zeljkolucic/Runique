@@ -30,9 +30,10 @@ class SyncRunWorkerScheduler(
     private val context: Context,
     private val pendingSyncDao: RunPendingSyncDao,
     private val sessionStorage: SessionStorage,
-    private val workManager: WorkManager,
     private val applicationScope: CoroutineScope
 ): SyncRunScheduler {
+    private val workManager = WorkManager.getInstance(context)
+
     override suspend fun scheduleSync(type: SyncRunScheduler.SyncType) {
         when(type) {
             is SyncRunScheduler.SyncType.CreateRun -> scheduleCreateRunWorker(type.run, type.mapPictureBytes)
